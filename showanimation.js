@@ -41,7 +41,7 @@ function positionAnimate(score, positionNum) {
             sniperTextAnimation();
         }
            
-        if (currentPosition == 1024) {
+        if (currentPosition == 16) {
             huanhu.play();
             $gridcontainer.append($addArmyJun); $addArmyJunfont
             $gridcontainer.append($addArmyJunfont)
