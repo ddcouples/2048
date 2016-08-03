@@ -1,0 +1,47 @@
+﻿body,div,a,p{
+    margin:0;
+    padding:0;
+    border:0;
+    clear:both;
+    text-decoration:none;
+     font-family:"Microsoft YaHei";
+}
+
+p{
+    text-align:center;
+    font-size:10px;
+    color:#ff0;
+    margin-top:1em;
+    margin-left:-6em;
+}
+
+
+p span{
+    position:absolute;
+    color:red;
+    text-shadow:1px 1px 0 #f0f0f0;
+}
+#grid-container{
+    position:relative;
+    margin:10px auto;
+}
+.grid-cell{
+    position:absolute;
+    background-color:#88a056;
+}
+.number-cell{
+    position:absolute;
+    opacity:0.6;
+    -webkit-opacity:0.6;
+    -moz-opacity:0.6;
+    -o-opacity:0.6;
+    filter:alpha(opacity=60);
+    text-align:center;
+   text-shadow: 0 1px 0 #f0f0f0;
+}
+
+.help{
+    font-size:10px;text-shadow:none;text-indent:2em;text-align:left;
+    margin:1px auto;
+    color:#f0f0f0;
+}
