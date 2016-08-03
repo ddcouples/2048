@@ -134,7 +134,7 @@ function updateBoardView(bordes) {
         }
     }
     $('.number-cell').css('line-height',cellSideLength + 'px');
-    $('.number-cell').css('font-size', 0.02 * cellSideLength + 'px');
+    $('.number-cell').css('font-size', 0.2 * cellSideLength + 'px');
 }
 document.addEventListener("dblclick", function () {
     if (!isFullScreen) {
