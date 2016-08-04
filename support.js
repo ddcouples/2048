@@ -1,4 +1,4 @@
-﻿
+
 var n = 4;
 var documentWidth = window.screen.availWidth < window.screen.availHeight ? window.screen.availWidth : window.screen.availHeight;
 var gridContainerWidth, gridContainerBorder, cellSideLength, cellSpace;
@@ -60,8 +60,8 @@ function getPos(i) {
             case 4096: return "总司令"; break;
             case 8192: return "副主席"; break;
             case 16384: return "主席"; break;
-            case 32768: return "一统地球"; break;
-            default: return "地球不适合你哦，换个星球吧！"; break;
+            case 32768: return "总书记"; break;
+            default: return "GOD！"; break;
         }
         return "black";
     }
