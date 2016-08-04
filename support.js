@@ -1,4 +1,4 @@
-﻿
+
 var n = 4;
 var documentWidth = window.screen.availWidth < window.screen.availHeight ? window.screen.availWidth : window.screen.availHeight;
 var gridContainerWidth, gridContainerBorder, cellSideLength, cellSpace;

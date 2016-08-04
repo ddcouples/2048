@@ -1,4 +1,4 @@
-﻿//显示动画
+//显示动画
 function showNumberWithAnimation(i, j, number) {
     var numberCell = $("#number-cell-" + i + "-" + j);
     numberCell.css("background-color", getNumberBackgroundColor(number)).css("color", getNumberColor(number)).css("border-radius", 0.1 * cellSideLength + "px").text(getTextValue(number));

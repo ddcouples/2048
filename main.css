@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ﻿body, div, a, p {
+=======
+body, div, a, p {
+>>>>>>> refs/remotes/origin/gh-pages
     margin: 0;
     padding: 0;
     border: 0;
@@ -21,9 +25,13 @@ p {
         color: red;
         text-shadow: 1px 1px 0 #f0f0f0;
     }
+<<<<<<< HEAD
 #changePages span {
     position: relative;
 }
+=======
+
+>>>>>>> refs/remotes/origin/gh-pages
 #grid-container {
     position: relative;
     margin: 10px auto;
@@ -163,4 +171,8 @@ background: none;
 .keleyi-com-nav a:hover{
 color:#fff;
 text-decoration: none;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> refs/remotes/origin/gh-pages

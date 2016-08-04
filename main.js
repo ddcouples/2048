@@ -1,4 +1,4 @@
-﻿var bord = [];
+var bord = [];
 var hasConflicted = [];//检测是否碰撞
 var isGameoverFlag = false;
 var canScroll = false;//能够滚屏;
@@ -135,10 +135,14 @@ function updateBoardView(bordes) {
     }
     $('.number-cell').css('line-height',cellSideLength + 'px');
 <<<<<<< HEAD
+<<<<<<< HEAD
     $('.number-cell').css('font-size', 0.3* cellSideLength + 'px');
 =======
     $('.number-cell').css('font-size', cellSideLength + 'px');
 >>>>>>> origin/master
+=======
+    $('.number-cell').css('font-size', 0.3* cellSideLength + 'px');
+>>>>>>> refs/remotes/origin/gh-pages
 }
 document.addEventListener("dblclick", function () {
     if (!isFullScreen) {
