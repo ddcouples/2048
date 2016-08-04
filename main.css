@@ -26,13 +26,13 @@ p {
     position: relative;
     margin: 10px auto;
     z-index: 0;
-    box-shadow: 0px 7px 0 #3595b8;
+    box-shadow: 0px 5px 0 #3595b8;
 }
 
 .grid-cell {
     position: absolute;
     background: #9cd564;
-    box-shadow: 0px 7px 0 #86b65b;
+    box-shadow: 0px 3px 0 #86b65b;
 }
 
 .number-cell {
