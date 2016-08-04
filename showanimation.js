@@ -1,4 +1,4 @@
-﻿//显示动画
+//显示动画
 function showNumberWithAnimation(i, j, number) {
     var numberCell = $("#number-cell-" + i + "-" + j);
     numberCell.css("background-color", getNumberBackgroundColor(number)).css("color", getNumberColor(number)).css("border-radius", 0.1 * cellSideLength + "px").text(getTextValue(number));
@@ -36,12 +36,12 @@ function positionAnimate(score, positionNum) {
     if (positionNum > currentPosition) {
 
         currentPosition = positionNum;
-        if (currentPosition >= 64) {
+        if (currentPosition >= 128 && currentPosition<2048) {
             times++;
             sniperTextAnimation();
         }
            
-        if (currentPosition == 1024) {
+        if (currentPosition == 2048) {
             huanhu.play();
             $gridcontainer.append($addArmyJun); $addArmyJunfont
             $gridcontainer.append($addArmyJunfont)
