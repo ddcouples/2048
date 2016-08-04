@@ -28,6 +28,7 @@
         });
         $.mobile.buttonMarkup.hoverDelay = "false";//按钮延迟问题的解决
         $(document).ready(function () {
+            $("#changePages").find("img").css("width", documentWidth);
             $("#pageHome").find("img").css("width", documentWidth);
             $("#newGameBtn").click(function () {
                 canScroll = true;
@@ -70,7 +71,35 @@
 
 
     </script>
-    <!-- 我的主页 -->
+    <!-- 我的主页  http://news.xinhuanet.com/mil/2015-12/05/128501692_14492897686261n.gif -->
+    <div data-role="page" id="changePages" data-theme="b">
+        <div data-role="header" data-theme="b" data-tap-toggle="false" data-position="fixed" data-id="myheader">
+            <h1>2048(军队版)</h1>
+        </div>
+        <div data-role="content">
+            <div data-type="horizontal" style="text-align:center;">
+                <h1>通告</h1>
+                <h3>感谢大家的支持，如果好玩，求推广！</h3>
+                <p class="help" style="text-align:center;">
+                    <img src=" http://news.xinhuanet.com/mil/2015-12/05/128501692_14492897686261n.gif" />
+                    <img src="firstOne.JPG" /><br />
+                </p>
+                <p class="help">
+                    <b style="font-size:15px;color:red;">游戏说明：</b>
+                    鉴于目前部分玩家，在升级至5格后，发现游戏难度降低，大大减少了游戏的趣味性！<br />
+                    现将游戏关闭，更新内容，在升级至5格之后，设置新兵种<span>工兵、间谍</span>,以及出现<span>障碍物</span>和<span>炸弹</span>，炸弹可与其他兵种同归于尽，间谍使其他兵种降级，工兵可以清楚障碍物和炸弹，并占据它的位置！<span>狙击手</span>可以消灭障碍物！
+
+                </p>
+               
+                <p>感谢各位的支持，我会再接再励的！</p>
+                <a href="#pageHome" data-role="button" data-transition="slidefade" data-corners="false" data-theme="c">我不管就是要玩</a>
+               
+            </div>
+        </div>
+        <div data-role="footer" data-tap-toggle="false" data-theme="b" data-position="fixed" data-id="myfooter">
+            <h1>欢迎来的ddcouples的领域</h1>
+        </div>
+    </div>
     <div data-role="page" id="pageHome" data-theme="b">
         <div data-role="header" data-theme="b" data-tap-toggle="false" data-position="fixed" data-id="myheader">
             <h1>2048(军队版)</h1>
@@ -93,7 +122,7 @@
                     <span style="position:relative;">  撤退：</span>返回上一次移动前状态！（只能返回一步！）
                 </p>
                 <p style="text-indent:2em;margin:0;text-align:left;">
-                    应玩家要求，现在新加狙击手功能，当你职务提升到营长后，没升一职，加一狙击手，关键的时候可以用<span style="position:relative;">狙击手</span>哦，但是一旦使用就无法撤销了，毕竟军令如山嘛！！在您升到<span style="position:relative;">军长</span>的时候有彩蛋哦，也会相应的减少游戏难度！
+                    应玩家要求，现在新加狙击手功能，当你职务提升到营长后，每升一职，加一狙击手，关键的时候可以用<span style="position:relative;">狙击手</span>哦，但是一旦使用就无法撤销了，毕竟军令如山嘛！！在您升到<span style="position:relative;">军长</span>的时候有彩蛋哦，也会相应的减少游戏难度！
                 </p>
                 <p class="help" style="text-align:center;">
                     <img src="junZ.JPG" />
@@ -115,29 +144,15 @@
         <div data-role="content" style="margin-top:22px">
             <p id="scoreText">你现在的职务是：<span id="position">义务兵</span></p>
             <div id="grid-container">
-                <!--<div class="grid-cell" id="grid-cell-0-0"></div>
-                <div class="grid-cell" id="grid-cell-0-1"></div>
-                <div class="grid-cell" id="grid-cell-0-2"></div>
-                <div class="grid-cell" id="grid-cell-0-3"></div>
-                <div class="grid-cell" id="grid-cell-1-0"></div>
-                <div class="grid-cell" id="grid-cell-1-1"></div>
-                <div class="grid-cell" id="grid-cell-1-2"></div>
-                <div class="grid-cell" id="grid-cell-1-3"></div>
-                <div class="grid-cell" id="grid-cell-2-0"></div>
-                <div class="grid-cell" id="grid-cell-2-1"></div>
-                <div class="grid-cell" id="grid-cell-2-2"></div>
-                <div class="grid-cell" id="grid-cell-2-3"></div>
-                <div class="grid-cell" id="grid-cell-3-0"></div>
-                <div class="grid-cell" id="grid-cell-3-1"></div>
-                <div class="grid-cell" id="grid-cell-3-2"></div>
-                <div class="grid-cell" id="grid-cell-3-3"></div>-->
             </div>
 
             <p>您的战功 &rArr;荣誉值为：&nbsp; <span id="score">0</span></p>
-            <div data-role="controlgroup" data-type="horizontal" style="text-align:center;">
-                <a id="sniperBtn" data-role="button" data-corners="false" data-icon="delete">狙击手 X&nbsp;<span style="font-size:large;color:red;position:absolute;">3</span></a>
-                <a id="backOneStep" data-role="button" data-shadow="true" data-icon="back">撤退</a>
-            </div>
+            <div  style="text-align:center;">
+                <ul class="keleyi-com-nav black" data-role="controlgroup" data-type="horizontal">
+                    <li> <a id="sniperBtn" data-role="button" data-corners="false" data-icon="delete">狙击手 X&nbsp;<span style="font-size:large;color:red;position:absolute;">3</span></a></li>
+                    <li> <a id="backOneStep" data-role="button" data-shadow="true" data-icon="back">撤退</a></li>
+                </ul>
+</div>
         </div>
         <div data-role="footer" data-tap-toggle="false" data-position="fixed" data-theme="b">
             <h1>欢迎来的ddcouples的领域</h1>

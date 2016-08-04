@@ -21,10 +21,10 @@ function getPos(i) {
 
     function getNumberBackgroundColor(number) {
         switch (number) {
-            case 2: return "#eee4da"; break;
+            case 2: return "#eee40a"; break;
             case 4: return "#ede0c8"; break;
-            case 8: return "#f2b179"; break;
-            case 16: return "#f59563"; break;
+            case 8: return "#f5b109"; break;
+            case 16: return "#f09563"; break;
             case 32: return "#f07c5f"; break;
             case 64: return "#ff5e3b"; break;
             case 128: return "#edcf72"; break;
@@ -60,8 +60,8 @@ function getPos(i) {
             case 4096: return "总司令"; break;
             case 8192: return "副主席"; break;
             case 16384: return "主席"; break;
-            case 32768: return "一统地球"; break;
-            default: return "地球不适合你哦，换个星球吧！"; break;
+            case 32768: return "总书记"; break;
+            default: return "GOD！"; break;
         }
         return "black";
     }
