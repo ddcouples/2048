@@ -128,13 +128,17 @@ function updateBoardView(bordes) {
             if (bordes[i][j] == 0) {
                 numbercell.css("width", 0).css("height", 0).css("top", getPos(i) + cellSideLength / 2).css("left", getPos(j) + cellSideLength / 2);
             } else {
-                numbercell.css('width', (cellSideLength - 2)).css('height', cellSideLength - 2).css('top', getPos(i) + 1).css('left', getPos(j) + 1).css('background-color', getNumberBackgroundColor(bord[i][j])).css('color', getNumberColor(bord[i][j])).css("border-radius", 0.1 * cellSideLength + "px").text(getTextValue(bord[i][j]));
+                numbercell.css('width', (cellSideLength - 2)).css('height', cellSideLength - 2).css('top', getPos(i) + 1).css('left', getPos(j) + 1).css('background-color', getNumberBackgroundColor(bord[i][j])).css('color', getNumberColor(bord[i][j])).css("border-radius", 0.01 * cellSideLength + "px").text(getTextValue(bord[i][j]));
             }
             hasConflicted[i][j] = false;
         }
     }
     $('.number-cell').css('line-height',cellSideLength + 'px');
+<<<<<<< HEAD
     $('.number-cell').css('font-size', 0.3* cellSideLength + 'px');
+=======
+    $('.number-cell').css('font-size', cellSideLength + 'px');
+>>>>>>> origin/master
 }
 document.addEventListener("dblclick", function () {
     if (!isFullScreen) {
