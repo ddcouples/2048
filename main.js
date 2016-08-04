@@ -1,4 +1,4 @@
-﻿var bord = [];
+var bord = [];
 var hasConflicted = [];//检测是否碰撞
 var isGameoverFlag = false;
 var canScroll = false;//能够滚屏;
@@ -35,7 +35,7 @@ function prepareForMobile() {
         cellSideLength = 100;
     }
     backStep();
-    $gridcontainer.css("width", gridContainerWidth).css("height", gridContainerWidth).css("border", gridContainerBorder + "px solid #E0D2D2").css("border-radius", 0.03 * gridContainerWidth + "px").css("background-color", "#b57575");
+    $gridcontainer.css("width", gridContainerWidth).css("height", gridContainerWidth).css("border", gridContainerBorder + "px solid #36b7e5").css("border-radius", 0.03 * gridContainerWidth + "px").css("background", "#36b7e5");
     $(".grid-cell").remove();
     for (var i = 0; i < n; i++) {
         for (var j = 0; j < n; j++) {
@@ -134,7 +134,7 @@ function updateBoardView(bordes) {
         }
     }
     $('.number-cell').css('line-height',cellSideLength + 'px');
-    $('.number-cell').css('font-size', 0.3 * cellSideLength + 'px');
+    $('.number-cell').css('font-size', 0.3* cellSideLength + 'px');
 }
 document.addEventListener("dblclick", function () {
     if (!isFullScreen) {
